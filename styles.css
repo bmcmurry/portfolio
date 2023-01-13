@@ -9,12 +9,6 @@ body {
     line-height: 1.5;
     color:#333;
 }
-h1,
-h2 {
-  margin-bottom: .4em;
-  font-size: 12vw 10vh;
-  line-height: 1.1;
-}
 .container {
   text-align: center;
   display: flex;
@@ -28,7 +22,6 @@ h2 {
     background-color: white;
     height: 80px;
     color: #333;
-    /* overflow: hidden; */
     position: fixed;
     width: 100%;
     opacity: 92%;
@@ -79,22 +72,15 @@ h2 {
     text-align: center;
     text-decoration: none;
     border-radius: 50px;
-  }
-  .header {
-    max-width: 1200px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 110px 5%;
-    
+  
   }
   .header h1 {
-    font-size: 2.8rem;
+    font-size: 5rem;
     font-weight: bold;
     line-height: 1.2;
   }
   .header .biglogo {
-    max-width: 80%;
+    max-width: 60%;
     border-radius: 100%;
   }
   .header .container {
@@ -104,18 +90,24 @@ h2 {
     background-color:#fafafa;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 0, 10em, 15em, 10em;
+    padding-top: 20em;
   }
   .header .container ul {
     list-style-type: none;
     justify-content: center;
     align-items: center;
     display: inline-block;
+    margin: 5em;
   
   }
-  .boxes .container {
+  .boxes .container{
     display: flex;
     justify-content: space-between;
+    transition-property: all;
+    transition: 1s ease 0s;
   }
+  
   .box {
     flex:1;
     background-color: #fafafa;
@@ -123,6 +115,64 @@ h2 {
     margin: 20px 10px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 15px 20px;
+    transition-property: all;
+    transition: 1s ease 0s;
+  }
+  .resume {
+    max-width: 100%;
+    border-radius: 10px;
+    transition-property: all;
+    transition: 1s ease 0s;
+  }
+  .resume:hover {
+    max-width: 102%;
+    transition: 1s ease 0s;
+  }
+  .projects-video {
+    max-width: 20em;
+    transition-property: all;
+    border-radius: 20px;
+  }
+  .projects-video:hover {
+    opacity: 50%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: 1s ease 0s;
+    max-width: 21em
+  }
+    .projects-img {
+    max-width: 20em;
+    border-radius: 20px;
+    transition-property: all;
+  }
+  .projects-img:hover {
+    opacity: 50%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: 1s ease 0s;
+    max-width:19em
+  }
+  .college img{
+    max-width: 90%;
+    border-radius: 20px;
+    transition-property: all;
+  }
+  .college img:hover {
+    opacity: 50%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease 0s;
+    max-width: 95%;
+  }
+  .last_p {
+    padding-bottom: 2em;
+  }
+  .box h3 {
+    color: #81b6bb;
+  }
+  em {
+    color: #81b6bb;
+    font-weight: bold;
+  }
+  .click_img {
+    color: #e87a8b;
   }
   .icon {
     background-color: #fafafa;
@@ -147,25 +197,6 @@ h2 {
     background-color: #84d4db;
     transition: 0.35s ease 0s;
   }
-  /* .section {
-    background-color: white;
-    color: #333;
-    min-height: 400px;
-  } */
-  /* .section h1 {
-    font-size: 3 rem;
-    font-weight: bold;
-    line-height: 1.2;
-  } */
-  /* .section img {
-    max-width: 400px;
-  } */
-  /* .section .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  } */
-
   .footer {
     display:flexbox;
     align-items: center;
