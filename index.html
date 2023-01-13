@@ -21,14 +21,14 @@
         <div>
           <img class="logo" src="images/Mclaptop.jpg" alt="logo" />
         </div>
-        <input type="checkbox" class="nav-toggle" />
+        <!-- <input type="checkbox" class="nav-toggle" /> -->
         <ul class="nav__links">
           <li><a class="active" href="#" id="index.html">Home</a></li>
+          <!-- <li>
+            <a href="projects">Projects</a>
+          </li> -->
           <li>
-            <a href="projects.html">Projects</a>
-          </li>
-          <li>
-            <a href="about.html">Education</a>
+            <a href="#socials">Contact</a>
           </li>
         </ul>
       </div>
@@ -40,7 +40,7 @@
           <h2>Future Software Developer</h2>
           <p>blah blah blah</p>
         </div>
-        <div>
+        <div class="contact_card">
           <ul>
             <li>
               <img class="biglogo" src="images/newMclogo.jpg" />
@@ -71,7 +71,7 @@
             </button></a
           >
         </div>
-        <div class="box">
+        <div class="box" id="skills">
           <h2>Coding Languages</h2>
           <ul>
             <li>
@@ -118,7 +118,7 @@
     </section>
     <section class="boxes">
       <div class="container">
-        <div class="box">
+        <div class="box" id="python">
           <h2>Budget Tracker</h2>
           <a
             href="https://replit.com/@bmcmurry1991/Unit-2-Project-Budget-tracker?v=1"
@@ -129,21 +129,16 @@
                 type="video/mp4"
               /></video
           ></a>
-          <p>Director</p>
+          <p class="click_img">click image to view code</p>
         </div>
-        <div class="box">
+        <div class="box" id="dnd">
           <h2>D&D Character Creator</h2>
           <a
             href="https://replit.com/@bmcmurry1991/Unit-1-Project-DnD-character?v=1"
             target="_blank"
             ><img class="projects-img" src="images/D&D.jfif"
           /></a>
-
-          <p>Director</p>
-        </div>
-        <div class="box">
-          <h2>Trey</h2>
-          <p>Director</p>
+          <p class="click_img">click image to view code</p>
         </div>
       </div>
     </section>
@@ -162,6 +157,7 @@
           ><i class="fa fa-twitter"></i
         ></a>
         <a
+          id="socials"
           class="btn linkedin"
           href="https://www.linkedin.com/in/bryan-mcmurry-99b844252/"
           target="_blank"
