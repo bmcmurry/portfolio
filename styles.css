@@ -420,11 +420,12 @@ body {
     .navbar {
       height: fit-content;
       opacity: 100%;
+      z-index: 1000;
       
     }
     .navbar .container {
       margin: 0;
-      margin-bottom: 2em;
+      margin-bottom: 1em;
       align-items: flex-end;
     }
     .nav__links {
