@@ -8,15 +8,18 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color:#333;
+    background-color: #eda1ad;
+    
 }
 .container {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  padding: 0 30px;
+  
+
 }
 .navbar {
     background-color: white;
@@ -103,6 +106,9 @@ body {
   .snapshot h2 {
     color:#acdbdf
   }
+  .snapshot p {
+    padding: 1em 4em;
+  }
 
   .header .biglogo {
     max-width: 60%;
@@ -124,11 +130,17 @@ body {
     display: inline-block;
   
   }
-  .boxes .container{
-    display: flex;
+  .boxes .container {
+    
     justify-content: space-between;
     transition-property: all;
     transition: 1s ease 0s;
+
+  }
+  #section1.container {
+    padding: 2em 0;
+    justify-content: center;
+    margin: auto;
   }
   
   .box {
@@ -136,55 +148,86 @@ body {
     background-color: #fafafa;
     border-radius: 20px;
     min-height: 50em;
-    max-height: 50em;
-    margin: 20px 10px;
+    max-height: cover;  /*or set max for even column */
+    margin: 3em 1em;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 15px 20px;
     transition-property: all;
     transition: 1s ease 0s;
   }
+  .container .box#python+.box#dnd{
+    min-height: 20em;
+    max-height: fit-content;
+  }
+  .container .box#python{
+    min-height: fit-content;
+    max-height: cover;
+  }
   .resume {
-    max-width: 100%;
+    
+    max-width: 28em;
     border-radius: 10px;
     transition-property: all;
     transition: 1s ease 0s;
   }
   .resume:hover {
-    max-width: 102%;
+    max-width: 32em;
     transition: 1s ease 0s;
   }
+  .btn-download:hover i{
+    background: linear-gradient(to bottom,rgb(48, 48, 48) 0%, #01f10d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.1 ease 0s;
+  }
+  /* #resume {
+    
+  } */
   .projects-video {
-    max-width: 20em;
+    max-width: 30em;
     transition-property: all;
     border-radius: 20px;
   }
   .projects-video:hover {
-    opacity: 50%;
+    opacity: 60%;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     transition: 1s ease 0s;
-    max-width: 21em
+    max-width: 35em
   }
     .projects-img {
-    max-width: 20em;
+    max-width: 30em;
     border-radius: 20px;
     transition-property: all;
+    background-color: #e87a8b;
   }
   .projects-img:hover {
-    opacity: 50%;
+    opacity: 60%;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     transition: 1s ease 0s;
-    max-width:19em
+    max-width:33em
   }
+  /* .project_desc {
+    text-align: center;
+    max-width:18em;
+    padding: 2em 2em;
+    margin: 0 5em;
+    color: rgb(82, 82, 82);
+  } */
   .college img{
     max-width: 90%;
+    padding: 5px;
     border-radius: 20px;
     transition-property: all;
+    
   }
   .college img:hover {
-    opacity: 50%;
+    opacity: 90%;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    transition: 0.3s ease 0s;
-    max-width: 95%;
+    transition: 1s ease 0s;
+    max-width: 100%;
+    background-color: rgb(97, 96, 96);
+    background-color: #cd486b;
+    filter:opacity(.95) drop-shadow(0 0 0 #ed8e9c);
   }
   .last_p {
     padding-bottom: 2em;
@@ -202,17 +245,28 @@ body {
   #skills li{
     list-style: none;
    }
+   #skills {
+    flex: 1;
+    margin: 0 4em;
+   }
+   .box#skills ul li {
+    flex: 1;
+    margin-top: .6em;
+   }
   .icon {
-    background-color: #fafafa;
-    border-radius: 100%;
-    max-width: 20px;
-    display: flexbox;
-    margin: 0;
-    padding: 0;
+    max-height: 4em;
+    display:flexbox;
+    margin: .3em 0;
+    padding: 1px;
     text-align: center;
+  }
+  .icon:hover {
+    transition: 1s ease 0s;
+    max-height: 5em;
   }
   .btn-download{
     background-color: #acdbdf;
+    margin-top: .5em;
     border: none;
     border-radius: 5px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -220,10 +274,12 @@ body {
     padding: .5em .8em;
     cursor: pointer;
     font-size: .8em;
+    transition: all;
   }
   .btn-download:hover {
+    font-size: 1em;
     background-color: #84d4db;
-    transition: 0.35s ease 0s;
+    transition: 0.1s ease 0s;
   }
   .footer {
     display:flexbox;
@@ -326,7 +382,7 @@ body {
     font-size: 38px;
     vertical-align: middle;
   }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 800px) {
     body{
       background-color: #eda1ad;
     }
@@ -350,8 +406,10 @@ body {
     }
     .snapshot {
       display: grid;
-      
       margin-top: 5em;
+    }
+    .snapshot h1 {
+      justify-content: center;
     }
     .boxes .container{
       display: grid;
@@ -407,6 +465,26 @@ body {
       margin: 0;
      }  
      #skills{
-      background-color: #a5dce1;
+      background-color: #baebf0;
      }
+     #skills {
+      flex: 1;
+      margin: 4em;
+      padding: 1em;
+     }
+  .snapshot {
+    justify-content: center;
   }
+  .resume {
+    width: 80%
+  }
+  }
+  @media only screen and (max-width: 1000px) {}
+  @media  only screen and (max-width: 1024px max-height:1400px) {
+  } 912 1368
+  768 1024
+  820 1180
+  565 624
+  584 624
+    238 624
+  
