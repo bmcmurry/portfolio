@@ -118,6 +118,18 @@ body {
   .header .biglogo {
     max-width: 60%;
     border-radius: 100%;
+    background-image: url(images/background_logo.png);
+    background-size:cover;
+    background-position: center;
+   
+  }
+  .header .biglogo:hover {
+    max-width: 50%;
+    transition: 1s ease 0s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 3em;
+    background-size:120%;
+    background-position:center;
   }
   .header .container {
     display: flex;
@@ -264,6 +276,9 @@ body {
 .box#skills ul li a.wiki {
   display:inline-flex;
   
+}
+.click_logo {
+  color: rgb(88, 88, 88);
 }
   .icon {
     max-height: 4em;
