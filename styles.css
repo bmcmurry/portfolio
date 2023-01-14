@@ -174,12 +174,12 @@ body {
     max-width: 32em;
     transition: 1s ease 0s;
   }
-  .btn-download:hover i{
+  /* .btn-download:hover i{
     background: linear-gradient(to bottom,rgb(48, 48, 48) 0%, #01f10d 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: 0.1 ease 0s;
-  }
+  } */
   /* #resume {
     
   } */
@@ -479,12 +479,5 @@ body {
     width: 80%
   }
   }
-  @media only screen and (max-width: 1000px) {}
-  @media  only screen and (max-width: 1024px max-height:1400px) {
-  } 912 1368
-  768 1024
-  820 1180
-  565 624
-  584 624
-    238 624
+  
   
