@@ -22,6 +22,7 @@ body {
 
 }
 .navbar {
+  z-index: 1000;
     background-color: white;
     height: 80px;
     color: #333;
@@ -116,7 +117,7 @@ body {
   }
 
   .header .biglogo {
-    max-width: 60%;
+    max-width: 75%;
     border-radius: 100%;
     background-image: url(images/background_logo.png);
     background-size:cover;
@@ -124,10 +125,10 @@ body {
    
   }
   .header .biglogo:hover {
-    max-width: 50%;
+    max-width: 60%;
     transition: 1s ease 0s;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    padding: 3em;
+    padding: 4em;
     background-size:120%;
     background-position:center;
   }
@@ -420,11 +421,12 @@ body {
     .navbar {
       height: fit-content;
       opacity: 100%;
+      z-index: 1000;
       
     }
     .navbar .container {
       margin: 0;
-      margin-bottom: 2em;
+      margin-bottom: 1em;
       align-items: flex-end;
     }
     .nav__links {
