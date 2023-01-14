@@ -9,10 +9,11 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
+    <script
+      src="https://kit.fontawesome.com/ba9ef135f1.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Bryan McMurry's Portfolio</title>
   </head>
   <body>
@@ -21,12 +22,10 @@
         <div>
           <img class="logo" src="images/Mclaptop.jpg" alt="logo" />
         </div>
-        <!-- <input type="checkbox" class="nav-toggle" /> -->
+
         <ul class="nav__links">
           <li><a class="active" href="#" id="index.html">Home</a></li>
-          <!-- <li>
-            <a href="projects">Projects</a>
-          </li> -->
+
           <li>
             <a href="#socials">Contact</a>
           </li>
@@ -38,12 +37,28 @@
         <div class="snapshot">
           <h1>Bryan McMurry</h1>
           <h2>Future Software Developer</h2>
-          <p>blah blah blah</p>
+          <p>
+            Hello, and thank you for taking the time to visit my site! I'm
+            currently attending
+            <em>Base Camp Coding Academy Gradute Institute</em> to learn the
+            skills I need to become a Full-Stack Software Developer. I Have
+            enjoyed learning how to code because it allows me endless problem
+            solving experiences. I'm always looking for a challenge and to
+            further my knowledge.
+          </p>
+          <p>
+            Born in Tupelo, MS, but I have moved often living in several states.
+            My desire to explore has always drawn me to travel and expand my
+            horizons. Some of my hobbies include:
+            <em>snowboarding, hiking, MtG, and brazilian jiu-jitsu</em>. I
+            believe I have what it takes to work in the software industry, and
+            hopefully you will as well after you've viewed my work.
+          </p>
         </div>
         <div class="contact_card">
           <ul>
             <li>
-              <img class="biglogo" src="images/newMclogo.jpg" />
+              <img class="biglogo" src="images/my_headshot.jpg" />
             </li>
             <li>
               <a href="https://visitoxfordms.com/" target="_blank"
@@ -61,8 +76,8 @@
       </div>
     </header>
     <section class="boxes">
-      <div class="container">
-        <div class="box">
+      <div class="container" id="section1">
+        <div class="box" id="resume">
           <h2>Resume</h2>
           <img class="resume" src="images/resume.png" />
           <a href="bio_files/Bryan_McMurry_Resume.pdf" target="_blank"
@@ -75,17 +90,27 @@
           <h2>Coding Languages</h2>
           <ul>
             <li>
-              <i class="fa fa-python"></i>
-              <img src="images/pythonicon.jfif" class="icon" />
-              <p>Python</p>
+              <img src="images/python_icon.png" class="icon" />
             </li>
-            <li><i class="fa fa-html5"></i>HTML</li>
+            <li><img src="images/html_icon.png" class="icon" /></li>
             <li>
-              <i class="fa fa-css3">CSS</i>
+              <img src="images/css_icon.png" class="icon" />
+            </li>
+            <li>
+              <img src="images/django_icon.png" class="icon" />
+            </li>
+            <li><img src="images/javascript_icon.png" class="icon" /></li>
+            <li>
+              <img src="images/java_icon.png" class="icon" />
+            </li>
+            <li></li>
+            <li><img src="images/sql_icon.png" class="icon" /></li>
+            <li>
+              <img src="images/spring_icon.png" class="icon" />
             </li>
           </ul>
         </div>
-        <div class="box">
+        <div class="box" id="education">
           <h2>Education</h2>
           <p class="last_p">
             Below are the places I have received my formal education.
@@ -123,13 +148,20 @@
           <a
             href="https://replit.com/@bmcmurry1991/Unit-2-Project-Budget-tracker?v=1"
             target="_blank"
-            ><video class="projects-video" width="400px" autoplay controls loop>
+            ><video class="projects-video" mute autoplay controls loop>
               <source
                 src="images/Copy of BLAP INDUSTRIES.mp4"
                 type="video/mp4"
               /></video
           ></a>
-          <p class="click_img">click image to view code</p>
+          <p class="click_img">click image to view project</p>
+          <!-- <p class="project_desc">
+            This project was created using <strong>python</strong>.
+          </p>
+          <p>
+            My team and I created this to automate a payment schedule and record
+            expenses to excel ready <strong>CSV files</strong>.
+          </p> -->
         </div>
         <div class="box" id="dnd">
           <h2>D&D Character Creator</h2>
@@ -138,7 +170,14 @@
             target="_blank"
             ><img class="projects-img" src="images/D&D.jfif"
           /></a>
-          <p class="click_img">click image to view code</p>
+          <p class="click_img">click image to view project</p>
+          <!-- <p class="project_desc">
+            This project was created using <strong>python</strong>.
+          </p>
+          <p class="project_desc">
+            My team and I created this project to guide and expedite the
+            creating of a <strong>D&D</strong> character.
+          </p> -->
         </div>
       </div>
     </section>
