@@ -22,13 +22,15 @@ body {
 
 }
 .navbar {
-  z-index: 1000;
-    background-color: white;
+    z-index: 1000;
     height: 80px;
     color: #333;
     position: fixed;
     width: 100%;
-    opacity: 92%;
+    opacity: 85%;
+    background-color: #fafafa;
+    /* background-color:transparent;
+    backdrop-filter: blur(8px); */
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
   }
@@ -42,16 +44,21 @@ body {
   }
   .logo {
     max-width: fit-content;
-  
+    
    }
   .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: auto;
+    /* opacity: 70%;
+    background-color: #fafafa;
+    border-radius:20px 20px 0 0; */
+  
   }
   .nav__links {
     list-style: none;
+    
   }
   .nav__links li{
     display: inline-flex;
@@ -59,6 +66,7 @@ body {
   }
   .nav__links li a {
     transition:all 0.35s ease 0s;
+    
     
   }
   .nav__links li a:hover{
@@ -174,8 +182,8 @@ body {
     transition: 1s ease 0s;
   }
   .container .box#python+.box#dnd{
-    min-height: 20em;
-    max-height: fit-content;
+    min-height: fit-content;
+    max-height: cover;
   }
   .container .box#python{
     min-height: fit-content;
