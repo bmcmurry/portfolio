@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/Mclogo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/ba9ef135f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bryan McMurry's Portfolio</title>
+  </head>
+  <style>
+    .boxes {
+      padding: 4em 0em 0em 0em;
+    }
+  </style>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div>
+          <img class="logo" src="images/Mclaptop.jpg" alt="logo" />
+        </div>
+
+        <ul class="nav__links">
+          <li><a href="index.html" id="index.html">Home</a></li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+
+          <li>
+            <a href="#socials">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="boxes">
+      <div class="container" id="section1">
+        <div class="box" id="resume">
+          <h2>Resume</h2>
+          <img class="resume" src="images/Resume_pic.png" />
+          <a href="bio_files/Resume.pdf" target="_blank"
+            ><button class="btn-download">
+              <i class="fa fa-download"></i> Download
+            </button></a
+          >
+        </div>
+        <div class="box" id="skills">
+          <h2>Coding Languages</h2>
+          <p class="click_logo">click the logos to find out more!</p>
+          <ul>
+            <li>
+              <a
+                class="wiki"
+                href="https://en.wikipedia.org/wiki/Python_(programming_language)"
+                target="_blank"
+                ><img src="images/python_icon.png" class="icon"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="wiki"
+                href="https://en.wikipedia.org/wiki/HTML"
+                target="_blank"
+                ><img src="images/html_icon.png" class="icon"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="wiki"
+                href="https://en.wikipedia.org/wiki/CSS"
+                target="_blank"
+                ><img src="images/css_icon.png" class="icon"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="wiki"
+                href="https://en.wikipedia.org/wiki/Django_(web_framework)"
+                target="_blank"
+                ><img src="images/django_icon.png" class="icon"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="wiki"
+                href="https://en.wikipedia.org/wiki/JavaScript"
+                target="_blank"
+                ><img src="images/javascript_icon.png" class="icon"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="wiki"
+                href="https://en.wikipedia.org/wiki/Java_(programming_language)"
+                target="_blank"
+                ><img src="images/java_icon.png" class="icon"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="wiki"
+                href="https://en.wikipedia.org/wiki/SQL"
+                target="_blank"
+                ><img src="images/sql_icon.png" class="icon"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="wiki"
+                href="https://en.wikipedia.org/wiki/Spring_Framework"
+                target="_blank"
+              >
+                <img src="images/spring_icon.png" class="icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="box" id="education">
+          <h2>Education</h2>
+          <p class="last_p">
+            Below are the places I have received my formal education.
+          </p>
+          <p class="click_img">click the image to visit Northwest</p>
+          <a
+            class="college"
+            href="https://www.northwestms.edu/about/campuses/lafayette-yalobusha-oxford"
+            target="_blank"
+            ><img src="images/northwest-mississippi-community-college.jpg"
+          /></a>
+          <h3>Northwest Community College</h3>
+          <h4>Associates of Accounting</h4>
+          <p class="last_p">3.8 GPA</p>
+          <p class="click_img">click the image to visit BCCA GI</p>
+          <a
+            class="college"
+            href="https://gi.basecampcodingacademy.org/about/"
+            target="_blank"
+            ><img
+              src="images/BaseCamp_GraduateInstitute_Logos_Design4_Brown&Blue copy.png"
+          /></a>
+          <h3>Base Camp Coding Academy Graduate Institute</h3>
+          <p>
+            I learned the coding skills I have during the one year period I
+            spent at <em>Base Camp</em>.
+          </p>
+          <button id="showYearbookButton">Show Yearbook</button>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+
+              <iframe
+                width="680px"
+                height="490px"
+                src="https://mixam.com/embed/64babc4e741e514476e4b46a"
+                allowtransparency="true"
+                allowfullscreen="true"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="social-btns">
+        <a
+          class="btn facebook"
+          href="https://www.facebook.com/bryan.mcmurry.7"
+          target="_blank"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        <a
+          class="btn twitter"
+          href="https://twitter.com/BryanMcmurry"
+          target="_blank"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        <a
+          id="socials"
+          class="btn linkedin"
+          href="https://www.linkedin.com/in/bryan-mcmurry-99b844252/"
+          target="_blank"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+        <a
+          class="btn instagram"
+          href="https://www.instagram.com/bryanmcmurry/"
+          target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a class="btn github" href="https://github.com/bmcmurry" target="_blank"
+          ><i class="fa fa-github-square"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="yearbook.js"></script>
+  </body>
+</html>
